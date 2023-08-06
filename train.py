@@ -96,9 +96,9 @@ def train(model: nn.Module, optimizer, device: str, loader: DataLoader, desc='Tr
                 sentence_length = (texts!=pad_id).sum(dim=-1) # calc length
                 pseudo_labels = (~labels.bool()).float()
                 U_mask = (sentence_length < args.len_thres) & (labels.bool()) # select short, chatgpt sentences as unlabeled
-                P_long_mask = (sentence_length < args.len_thres) & (~labels.bool()) # long human sentences
+                P_long_mask = (sentence_length < args.len_thres) & (~labels.bool()) # short human sentences
                 pseudo_labels[U_mask] = -1
-                pseudo_labels[P_long_mask] = 0 # disregard long human corpus
+                pseudo_labels[P_long_mask] = 0 # disregard short human corpus
                 # calc pu loss
                 scores = module.logits_to_scores(logits)
                 puloss = module(scores, pseudo_labels, sentence_length)
