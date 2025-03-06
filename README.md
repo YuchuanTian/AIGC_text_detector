@@ -10,7 +10,7 @@ Paper Link: https://arxiv.org/pdf/2305.18149.pdf
 
 ## Preview
 
-3/6/2025: We will update a latest detector version to align with the latest LLMs. Please keep tuned!
+**3/6/2025**: We will update a brand-new detector version to align with the latest LLMs. Please keep tuned!
 
 
 *BibTex* formatted citation:
