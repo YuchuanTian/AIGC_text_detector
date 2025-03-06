@@ -8,6 +8,11 @@ The official codes of our paper "Multiscale Positive-Unlabeled Detection of AI-G
 
 Paper Link: https://arxiv.org/pdf/2305.18149.pdf
 
+## Preview
+
+3/6/2025: We will update a latest detector version to align with the latest LLMs. Please keep tuned!
+
+
 *BibTex* formatted citation:
 
 ```
