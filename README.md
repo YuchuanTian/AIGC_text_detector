@@ -8,7 +8,9 @@ The official codes of our paper "Multiscale Positive-Unlabeled Detection of AI-G
 
 Paper Link: https://arxiv.org/pdf/2305.18149.pdf
 
-## Preview
+## News
+
+**3/25/2025**: We release a demo (with both English and Chinese) on HuggingFace: [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
 
 **3/6/2025**: We will update a brand-new detector version to align with the latest LLMs. Please keep tuned!
 
