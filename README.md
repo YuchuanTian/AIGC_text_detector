@@ -10,6 +10,8 @@ Paper Link: https://arxiv.org/pdf/2305.18149.pdf
 
 ## News
 
+**6/1/2025 MAJOR UPDATE**: We release a beta version targeting latest LLMs, including DeepSeek-V3 and GPT-4. [En-beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta)  [Zh-beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta)
+
 **3/25/2025**: We release a demo (with both English and Chinese) on HuggingFace: [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
 
 **3/6/2025**: We will update a brand-new detector version to align with the latest LLMs. Please keep tuned!
@@ -132,6 +134,17 @@ CUDA_VISIBLE_DEVICES=0 python train.py --batch-size 32 --max-sequence-length 512
 CUDA_VISIBLE_DEVICES=0 python train.py --batch-size 32 --max-sequence-length 512 --train-data-file unfilter_full/en_train.csv --val-data-file unfilter_full/en_test.csv --model-name bert-base-cased --local-data data --lamb 0.5 --prior 0.3 --pu_type dual_softmax_dyn_dtrun --len_thres 60 --aug_min_length 1 --max-epochs 1 --weight-decay 0 --mode original_single --aug_mode sentence_deletion-0.25 --clean 1 --val_file1 unfilter_sent/en_test.csv --quick_val 1 --learning-rate 5e-05 --seed 2
 
 ```
+
+## Detectors for Latest LLMs (Since 2025/3)
+
+A major update is ongoing, with updated English and Chinese detectors, datasets, and codes. This time, our detector targets at corpora from MiniMax-Text-01, Llama-3.3-70B-Instruct, Qwen2.5-72B-Instruct, DeepSeek-V3, and GPT-4-Turbo. We will include more CoT models in the next update. Please keep tuned!
+
+
+| Version                  | English                                                 | Chinese                                                  |  Comments
+| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 5/31/2025 AIGC-Detector-Beta | [En_beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta) | [Zh_beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta) | A beta version. Stronger versions will be released in the next update. |
+
+
 
 ## Acknowledgement
 
