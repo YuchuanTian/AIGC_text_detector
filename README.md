@@ -1,18 +1,23 @@
 # Multiscale Positive-Unlabeled Detection of AI-Generated Texts
 
-*Yuchuan Tian, Hanting Chen, Xutao Wang, Zheyuan Bai, Qinghua Zhang, Ruifeng Li, Chao Xu, Yunhe Wang*
+<p align="left">
+<a href="https://arxiv.org/abs/2305.18149" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2305.18149-b31b1b.svg?style=flat" /></a>
+<a href="https://arxiv.org/pdf/2305.18149" alt="arXiv">
+    <img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg?style=flat" /></a>
+<a href="https://huggingface.co/spaces/yuchuantian/AIGC_text_detector" alt="Hugging Face Models">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue" /></a>
+</p>  
 
-The official codes of our paper "Multiscale Positive-Unlabeled Detection of AI-Generated Texts".
-
-[[arXiv]](https://arxiv.org/abs/2305.18149)
-
-Paper Link: https://arxiv.org/pdf/2305.18149.pdf
+This is the official repo of our **ICLR'24 Spotlight** paper "Multiscale Positive-Unlabeled Detection of AI-Generated Texts".
 
 ## News
 
-**6/1/2025 MAJOR UPDATE**: We release a beta version targeting latest LLMs, including DeepSeek-V3 and GPT-4. [En-beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta)  [Zh-beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta)
+**6/25/2025 🔥🔥 [MAJOR UPDATE](#update-anchor)**: We release advanced (v3) detectors targeting latest LLMs, including DeepSeek-V3, GPT-4, and reasoning models. [En-v3](https://huggingface.co/yuchuantian/AIGC_detector_env3) / [En-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_env3short) /  [Zh-v3](https://huggingface.co/yuchuantian/AIGC_detector_zhv3) /  [Zh-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_zhv3short) / [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
 
-**3/25/2025**: We release a demo (with both English and Chinese) on HuggingFace: [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
+**6/1/2025**: We release a beta version targeting latest LLMs, including DeepSeek-V3 and GPT-4. [En-beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta)  [Zh-beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta)
+
+**3/25/2025**: We release a demo (with both English and Chinese) on HuggingFace.
 
 **3/6/2025**: We will update a brand-new detector version to align with the latest LLMs. Please keep tuned!
 
@@ -135,14 +140,20 @@ CUDA_VISIBLE_DEVICES=0 python train.py --batch-size 32 --max-sequence-length 512
 
 ```
 
-## Detectors for Latest LLMs (Since 2025/3)
-
-A major update is ongoing, with updated English and Chinese detectors, datasets, and codes. This time, our detector targets at corpora from MiniMax-Text-01, Llama-3.3-70B-Instruct, Qwen2.5-72B-Instruct, DeepSeek-V3, and GPT-4-Turbo. We will include more CoT models in the next update. Please keep tuned!
 
 
-| Version                  | English                                                 | Chinese                                                  |  Comments
-| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 5/31/2025 AIGC-Detector-Beta | [En_beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta) | [Zh_beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta) | A beta version. Stronger versions will be released in the next update. |
+## Updates
+
+<a name="update-anchor"></a>
+
+A major update (v3) is ongoing, with updated English and Chinese detectors, datasets, and codes. This time, our detector targets at corpora from MiniMax-Text-01, Llama-3.3-70B-Instruct, Qwen2.5-72B-Instruct, DeepSeek-V3, and GPT-4-Turbo. Besides, Chain-of-Thought (CoT) models are covered, including DeepSeek-R1, GPT-o3, and QwQ-32B. Please keep tuned for future updates!
+
+
+| Version                          | English                                                      | Chinese                                                      | Comments                                                     |
+| -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 6/25/2025 AIGC-Detector-V3       | [En_v3](https://huggingface.co/yuchuantian/AIGC_detector_env3) | [Zh_v3](https://huggingface.co/yuchuantian/AIGC_detector_zhv3) | Version 3. Strongest performance on normal AI texts. CoT LLMs are covered. |
+| 6/25/2025 AIGC-Detector-V3-Short | [En_v3_short](https://huggingface.co/yuchuantian/AIGC_detector_env3short) | [Zh_v3_short](https://huggingface.co/yuchuantian/AIGC_detector_zhv3short) | Version 3 targeting shorter texts without sacrificing longer ones. CoT LLMs are covered. |
+| 5/31/2025 AIGC-Detector-Beta     | [En_beta](https://huggingface.co/yuchuantian/AIGC_detector_enbeta) | [Zh_beta](https://huggingface.co/yuchuantian/AIGC_detector_zhbeta) | A beta version. Stronger versions will be released in the next update. |
 
 
 
@@ -153,5 +164,3 @@ Our code refers to the following GitHub repo:
 https://github.com/openai/gpt-2-output-dataset
 
 We sincerely thank their authors for open-sourcing.
-
-
