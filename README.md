@@ -7,6 +7,7 @@
     <img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg?style=flat" /></a>
 <a href="https://huggingface.co/spaces/yuchuantian/AIGC_text_detector" alt="Hugging Face Models">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue" /></a>
+<a href="https://github.com/YuchuanTian/AIGC_text_detector/blob/main/imgs/QR.jpg"><img src="https://img.shields.io/badge/微信-二维码加群-green?logo=wechat&amp"></a>
 </p>  
 
 This is the official repo of our **ICLR'24 Spotlight** paper "Multiscale Positive-Unlabeled Detection of AI-Generated Texts".
