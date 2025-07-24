@@ -7,12 +7,16 @@
     <img src="https://img.shields.io/badge/Paper-PDF-b31b1b.svg?style=flat" /></a>
 <a href="https://huggingface.co/spaces/yuchuantian/AIGC_text_detector" alt="Hugging Face Models">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue" /></a>
+<a href="https://modelscope.cn/studios/YuchuanTian/AIGC_text_detector" alt="ModelScope Studio">
+    <img src="https://img.shields.io/badge/ModelScope-Studio-blue" /></a>
 <a href="https://github.com/YuchuanTian/AIGC_text_detector/blob/main/imgs/QR.jpg"><img src="https://img.shields.io/badge/微信-二维码加群-green?logo=wechat&amp"></a>
 </p>  
 
 This is the official repo of our **ICLR'24 Spotlight** paper "Multiscale Positive-Unlabeled Detection of AI-Generated Texts".
 
 ## News
+
+**7/24/2025**: The latest v3 models and demos are released on ModelScope! [DEMO](https://modelscope.cn/studios/YuchuanTian/AIGC_text_detector/)
 
 **6/25/2025 🔥🔥 [MAJOR UPDATE](#update-anchor)**: We release advanced (v3) detectors targeting latest LLMs, including DeepSeek-V3, GPT-4, and reasoning models. [En-v3](https://huggingface.co/yuchuantian/AIGC_detector_env3) / [En-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_env3short) /  [Zh-v3](https://huggingface.co/yuchuantian/AIGC_detector_zhv3) /  [Zh-v3-short](https://huggingface.co/yuchuantian/AIGC_detector_zhv3short) / [DEMO](https://huggingface.co/spaces/yuchuantian/AIGC_text_detector)
 
